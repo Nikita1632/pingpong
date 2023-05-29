@@ -77,6 +77,10 @@ while game:
             dy *= -1
 
 
+        if sprite.collide_rect(racket1, ball) or sprite.collide_rect(racket2, ball):
+            dx *= -1
+
+
         window.fill((100,100,100))
         racket1.reset()
         racket2.reset()
